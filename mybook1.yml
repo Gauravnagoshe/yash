@@ -1,0 +1,10 @@
+---
+-name: web server installtion
+ hosts: web
+ become: yes
+ tasks:
+     -name: wberver instlltion 
+      apt:
+       -name: httpd
+       state: present
+
